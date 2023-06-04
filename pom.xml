@@ -66,6 +66,18 @@
     <artifactId>poi</artifactId>
     <version>5.2.3</version>
 </dependency>
+<dependency>
+    	<groupId>io.github.bonigarcia</groupId>
+    	<artifactId>webdrivermanager</artifactId>
+    	<version>5.0.3</version>
+	</dependency>
+	<!--  for web site automation -->
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.9.1</version>
+</dependency>
+
  </dependencies>
  <build>
  <pluginManagement>

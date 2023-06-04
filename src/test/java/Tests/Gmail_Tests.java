@@ -67,7 +67,7 @@ public class Gmail_Tests extends BaseClass {
 	@Test(priority=3, enabled=true)
 	public void deleteSpecificMail() {
 		Response res1=obj.getAllMailsViaMaxResults(AccessToken,emailid,200,true);
-		String id=res1.body().jsonPath().getString("messages[4].id");
+		String id=res1.body().jsonPath().getString("messages[3].id");
 		System.out.println("message id: "+id);
 		Assert.assertEquals(res1.statusCode(),200);
 		Response res3=obj.deleteMail(AccessToken, emailid, id);
